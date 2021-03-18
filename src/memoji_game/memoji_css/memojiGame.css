@@ -1,0 +1,63 @@
+.game__container__cards {
+  background-color: #CFD0CF;
+  display: flex;
+  justify-content: center;
+}
+.game__container__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 130px);
+  grid-template-rows: repeat(3, 130px);
+  grid-gap: 5px;
+  position: relative;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top right, #22AB93, #19668D);
+  border: 5px solid white;
+  box-shadow: 1px 1px 5px rgb(00, 00, 00, 50%);
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 1s;
+}
+.card__picture {
+  display: none;
+  font-size: 60px;
+}
+
+.see {
+  display: inline;
+}
+
+@keyframes rotade {
+100% {background: white;}
+}
+
+.rotade180 {
+  animation: rotade 0.5s linear forwards;
+  transform: rotateY(180deg);
+}
+
+@keyframes sameResult {
+  0% {background: white;}
+  100% {background: #5AD66F;}
+}
+
+.same {
+  animation: sameResult 1s linear forwards;
+}
+
+@keyframes differentResult {
+  0% {background: white;}
+  100% {background: #f44336;}
+}
+
+.different {
+  animation: differentResult 1s linear forwards;
+}
+
+.game__container__taimer_defoult {
+  font-size: 30px;
+  margin: 0 auto;
+}
